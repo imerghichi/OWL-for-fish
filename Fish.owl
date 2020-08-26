@@ -1,0 +1,672 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#a"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#est -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#est"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#n&apos;a_pas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#n&apos;a_pas">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#n&apos;a_pas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#n&apos;est_pas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#n&apos;est_pas">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#n&apos;est_pas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Acanthodiens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Acanthodiens">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eteint"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Gnathostomes"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Actinistia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Actinistia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Sarcopterygii"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Actinopteri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Actinopteri">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Actinopterygii"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Cladistia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Actinopterygii -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Actinopterygii">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ostéichthyens"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Rayonnée"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Sarcopterygii"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Agnathes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Agnathes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Poisson"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#n&apos;a_pas"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Machoire"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Gnathostomes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Anaspida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Anaspida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ostracodermes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Animal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Arandaspides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Arandaspides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ptéraspidomorphes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Astrapides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Astrapides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ptéraspidomorphes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Cephalaspidomorphi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Cephalaspidomorphi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ostracodermes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Charnue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Charnue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Nageoire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Chimaeriformes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Chimaeriformes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Holocephali"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Chondrichtyens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Chondrichtyens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Gnathostomes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Chondrostéens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Chondrostéens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Actinopteri"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Néoptérygiens"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Cladistia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Cladistia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Actinopterygii"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#a"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Charnue"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#pectoral"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Coelacanthimorpha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Coelacanthimorpha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Actinistia"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Onychodontiformes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Dipnoi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Dipnoi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Rhipidistia"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Tetrapodomorpha"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Elasmobranchii -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Elasmobranchii">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Chondrichtyens"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Holocephali"/>
+        <rdfs:isDefinedBy>Sélacien</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eteint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eteint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Animal"/>
+        <rdfs:isDefinedBy>disparu</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eugeneodontida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eugeneodontida">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eteint"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Holocephali"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Galeaspida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Galeaspida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Cephalaspidomorphi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Gnathostomes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Gnathostomes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Poisson"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Machoire"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Guiyu_oneiros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Guiyu_oneiros">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eteint"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Sarcopterygii"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Holocephali -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Holocephali">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Chondrichtyens"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Hyperoartiens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Hyperoartiens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Agnathes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ostracodermes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Hétérostracés -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Hétérostracés">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ptéraspidomorphes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Iniopterygiformes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Iniopterygiformes">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eteint"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Holocephali"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Machoire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Machoire"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Nageoire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Nageoire"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Néoptérygiens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Néoptérygiens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Actinopteri"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Onychodontiformes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Onychodontiformes">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Actinistia"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eteint"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Osteostraci -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Osteostraci">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Cephalaspidomorphi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ostracodermes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ostracodermes">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Agnathes"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eteint"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ostéichthyens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ostéichthyens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Gnathostomes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Petalodontiformes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Petalodontiformes">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eteint"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Holocephali"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Petromyzontiformes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Petromyzontiformes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Hyperoartiens"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Pituriaspida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Pituriaspida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Cephalaspidomorphi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Placodermes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Placodermes">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eteint"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Gnathostomes"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Poisson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Poisson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Vertébré"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ptéraspidomorphes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ptéraspidomorphes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ostracodermes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Rajomorphii -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Rajomorphii">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Elasmobranchii"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Selachimorpha"/>
+        <rdfs:isDefinedBy>raies</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Rayonnée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Rayonnée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Nageoire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Rhipidistia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Rhipidistia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Sarcopterygii"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Sarcopterygii -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Sarcopterygii">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ostéichthyens"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Charnue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Selachimorpha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Selachimorpha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Elasmobranchii"/>
+        <rdfs:isDefinedBy>requins</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Symmoriida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Symmoriida">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eteint"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Holocephali"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Tetrapodomorpha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Tetrapodomorpha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Rhipidistia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Thelodonti -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Thelodonti">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ostracodermes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Vertébré -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Vertébré">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#pectoral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#pectoral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Nageoire"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Diodon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Diodon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Néoptérygiens"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#poisson_rouge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#poisson_rouge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Néoptérygiens"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Acanthodiens"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Chondrichtyens"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ostéichthyens"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Placodermes"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Actinistia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Guiyu_oneiros"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Rhipidistia"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Anaspida"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Cephalaspidomorphi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Ptéraspidomorphes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Thelodonti"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Arandaspides"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Astrapides"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Hétérostracés"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Chimaeriformes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Eugeneodontida"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Iniopterygiformes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Petalodontiformes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Symmoriida"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Galeaspida"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Osteostraci"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2020/7/untitled-ontology-3#Pituriaspida"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
